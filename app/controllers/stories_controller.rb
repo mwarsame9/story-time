@@ -11,7 +11,7 @@ class StoriesController < ApplicationController
 
   def create
     @story = Story.new(story_params)
-    @story.image = "#{rand(1..3)}.jpg"
+    # @story.image = "#{rand(1..3)}.jpg"
     if @story.save
       flash[:notice] = "New story created."
       redirect_to story_path(@story)
