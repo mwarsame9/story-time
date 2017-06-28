@@ -1,0 +1,48 @@
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+.story-list {
+  font-size: 28px;
+}
+
+
+#story {
+
+  .sentence-box {
+    border-left: 1px solid #bdbdbd;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: -4px;
+  }
+
+  .sentence-tab {
+    color: #333;
+    display: inline-block;
+    background-color: #d8d8d8;
+    padding: 3px 10px;
+  }
+
+  .sentence {
+    background-color: #d8d8d8;
+    padding: 3px 10px;
+    font-size: 22px;
+  }
+
+  .sentence:after {
+    content: ".";
+  }
+
+  #buttons {
+    margin-top: 20px;
+  }
+
+  .story-image {
+    display: block;
+    padding: 30px 0;
+  }
+
+  #sentences {
+    margin-bottom: 50px;
+  }
+
+}

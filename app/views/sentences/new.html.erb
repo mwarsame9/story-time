@@ -1,0 +1,19 @@
+<div id="story">
+  <h1><%= @story.name %></h1>
+  <%= image_tag(@story.image, class: 'story-image') %>
+  <div id="sentences">
+    <% @sentences.each_with_index do |sentence, index| %>
+      <% unless index == @sentences.length - 1 %>
+        <div class="sentence-box">
+          <div class="sentence-tab">
+            <%= sentence.author %>
+          </div>
+          <div class="sentence"><%= sentence.text %></div>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+  <%= render 'layouts/errors', :object => @sentence %>
+  <%= render 'form' %>
+  <%= link_to "Back", story_path(@story), class: "btn btn-danger" %>
+</div>

@@ -1,0 +1,8 @@
+<h1>Stories</h1>
+<ul>
+  <% @stories.each do |story| %>
+  <li class="story-list"><%= link_to story.name, story_path(story) %></li>
+  <% end %>
+</ul>
+<br>
+<%= link_to "New Story", new_story_path, class: "btn btn-primary" %>
