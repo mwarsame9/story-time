@@ -1,4 +1,6 @@
 <h1>Stories</h1>
+<h2>Featured Story</h2>
+<%= link_to Story.most_sentences.first.name, story_path(Story.most_sentences.first) %>
 <ul>
   <% @stories.each do |story| %>
   <li class="story-list"><%= link_to story.name, story_path(story) %></li>
